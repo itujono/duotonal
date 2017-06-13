@@ -71,15 +71,15 @@ class Subscribe extends CI_Controller {
 		$data['subview'] = $this->load->view($this->data['backendDIR'].'Subscribe', $data, TRUE);
 		$this->load->view('_layout_base',$data);
 	}
-
+	
 	public function mail_config(){
         
         $config['protocol'] = 'smtp';
         $config['smtp_host'] = 'smtp.sendgrid.net'; 
         $config['smtp_port'] = '587'; 
         $config['smtp_timeout'] = 30;
-        $config['smtp_user'] = 'apikey';
-        $config['smtp_pass'] = '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';
+        $config['smtp_user'] = '';
+        $config['smtp_pass'] = '';
         $config['mailtype'] = 'html';
         $config['charset'] = 'iso-8859-1';
         $config['wordwrap'] = TRUE;
