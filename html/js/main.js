@@ -252,11 +252,21 @@ $(function() {
         "img/bg2.jpg",
         "img/bg3.jpg",
         "img/bg4.jpg"
-    ],  {
-            duration: 4000,
-            fade: 1400
-        });
+    ], {
+    	duration: 4000,
+        fade: 1400
+    });
 
+
+
+
+    /////////////////////////////////////////////////////////////////
+
+
+
+    $(function(){
+      $("#player").YTPlayer();
+    });
 
 
 
