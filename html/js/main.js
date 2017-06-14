@@ -264,13 +264,18 @@ $(function() {
 
 
 
+
+    // Initializing the YTPlayer plugin for Youtube video background
+
     $(function(){
-      $("#player").YTPlayer();
+      $("#player").YTPlayer(); // default settings
     });
 
 
 
+
     /////////////////////////////////////////////////////////////////
+
 
 
 
