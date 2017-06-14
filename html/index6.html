@@ -32,7 +32,10 @@
         <main id="home" class="player"
             data-property="{
                 videoURL:'http://youtu.be/--aHImL98Nc',
-                containment:'self'
+                containment:'self',
+                autoPlay:true,
+                mute:false,
+                opacity:1
             }">
 
             <section>
@@ -52,6 +55,7 @@
                                 c-129,230.9-371.3,351.3-447.7,384.7C310,593.3,369.4,613,433.4,613L433.4,613z"/>
                         </g>
                     </svg> <!-- end Logo SVG -->
+                    
                 </div> <!-- end class Logo-Wrapper-->
 
                 <div class="captioner">
@@ -143,10 +147,6 @@
         <script src="js/backstretch.min.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
         <script src="js/jquery.mb.YTPlayer.min.js"></script>
-
-        <script>
-            $("main.player").YTPlayer();
-        </script>
 
     </body> <!-- end Body -->
 </html>

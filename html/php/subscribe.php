@@ -1,34 +1,34 @@
 <?php
 if($_POST)
 {
-    $to_Email       = "magicwarms@gmail.com"; //Replace with recipient email address
+    $to_Email       = "rivayudha@gmail.com"; //Replace with recipient email address
     $subject        = 'New subscription wak! Heheheh.'; //Subject line for emails
 	
 	
 	$from           = "no-reply@site.com";
     
-    // //check if its an ajax request, exit if not
-    // if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
+    //check if its an ajax request, exit if not
+    if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
     
-    //     //exit script outputting json data
-    //     $output = json_encode(
-    //     array(
-    //         'type'=>'error', 
-    //         'text' => 'Request must come from Ajax'
-    //     ));
+        //exit script outputting json data
+        $output = json_encode(
+        array(
+            'type'=>'error', 
+            'text' => 'Request must come from Ajax'
+        ));
         
-    //     die($output);
-    // } 
+        die($output);
+    } 
     
     //check $_POST vars are set, exit if any missing
-    if(!isset($_POST["email"]))
+    if(!isset($_POST["userEmail"]))
     {
         $output = json_encode(array('type'=>'error', 'text' => 'Email field is empty!'));
         die($output);
     }
 
     //Sanitize input data using PHP filter_var().
-    $user_Email       = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $user_Email       = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
     
 	
     //additional php validation
@@ -51,7 +51,7 @@ if($_POST)
     'X-Mailer: PHP/' . phpversion();
     
         // send mail
-    $sentMail = mail($to_Email, $subject, "New user subscription: " . $user_Email, $headers);
+    $sentMail = @mail($to_Email, $subject, "New user subscription: " . $user_Email, $headers);
     
     if(!$sentMail)
     {

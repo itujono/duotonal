@@ -1,25 +1,29 @@
 
-// Main.js built by Riva Yudha 2017
-// This file contains main plugins/library used during development.
+/*
+*
+* Main.js built by Riva Yudha 2017
+* This file contains main plugins/library used during development.
+*
+* Feel free to rewrite the code, since i put some info about the related elements.
+*
+*
+*
+* ===================================================
+* Anime.js - http://animejs.com
+* Tingle.js - https://robinparisi.github.io/tingle/
+* Parsley.js - http://parsleyjs.org/
+* Backstretch.js - https://github.com/jquery-backstretch/jquery-backstretch
+* Countdown.js - http://hilios.github.io/jQuery.countdown/
+* ====================================================
+*/
 
-// Feel free to rewrite the code, since i put some info about the related elements.
 
-// Anime.js - http://animejs.com
-// Tingle.js - https://robinparisi.github.io/tingle/
-// Parsley.js - http://parsleyjs.org/
-// Backstretch.js - https://github.com/jquery-backstretch/jquery-backstretch
-// Countdown.js - http://hilios.github.io/jQuery.countdown/
 
 
 $(function() {
 
 	'use strict';
 
-
-
-	$(document).on("ready", function() {
-		initVideoBg();
-	});
 
 
 
@@ -69,22 +73,7 @@ $(function() {
 	///////////////////////////////////////////////////////////////////////
 
 
-
-
-
-	// var main = $("main.player");
-
- //    main.YTPlayer({
- //        autoPlay: true,
- //        mute: false,
- //        quality: "hd720",
- //        showControls: false,
- //        showYTLogo: false,
- //        addRaster: true,
- //        stopMovieOnBlur: false,
- //        gaTrack: false
- //    });
-
+    
 
 
 	var dur = 2000,
@@ -292,7 +281,7 @@ $(function() {
 
 	// Configuring the Preloader
 
-	$(window).load(function () {
+	$(window).load(function() {
 	    $('#preloader').delay(100).fadeOut('slow');
 	    $('html,body').addClass('add-oveflow');
 	});
