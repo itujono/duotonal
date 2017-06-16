@@ -259,7 +259,6 @@ textarea {
 
 body {
     background-color: #fff;
-    overflow: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -278,19 +277,23 @@ main {
 }
 
 #style2 main {
-    background: url(../img/bg2.jpg) no-repeat;
+    background: url(../img/bg2.jpg) no-repeat; // change the bg img url here
+    background-size: cover;
 }
 
 #style3 main {
-    background: url(../img/bg3.jpg) no-repeat;
+    background: url(../img/bg3.jpg) no-repeat; // change the bg img url here
+    background-size: cover;
 }
 
 #style4 main {
-    background: url(../img/bg4.jpg) no-repeat;
+    background: url(../img/bg4.jpg) no-repeat; // change the bg img url here
+    background-size: cover;
 }
 
 #style5 main {
-    background: url(../img/bg1.jpg) no-repeat;
+    background: url(../img/bg1.jpg) no-repeat; // change the bg img url here
+    background-size: cover;
 }
 
 

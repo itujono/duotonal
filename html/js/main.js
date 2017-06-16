@@ -246,16 +246,16 @@ $(function() {
 
 
     // Initializing the Jquery Backstretch for background image slideshow
-
-    $("#style1 main").backstretch([
-        "img/bg1.jpg",
-        "img/bg2.jpg",
-        "img/bg3.jpg",
-        "img/bg4.jpg"
-    ], {
-    	duration: 4000,
-        fade: 1400
-    });
+    // udah aku pindahin ke page masing-masing pak tam, hehe sorry eh
+    // $("#style1 main").backstretch([
+    //     "img/bg1.jpg",
+    //     "img/bg2.jpg",
+    //     "img/bg3.jpg",
+    //     "img/bg4.jpg"
+    // ], {
+    // 	duration: 4000,
+    //     fade: 1400
+    // });
 
 
 
